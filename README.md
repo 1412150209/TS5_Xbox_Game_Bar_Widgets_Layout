@@ -26,10 +26,10 @@ It will notice you if it didn't connected to TS5.<br>
 You will find a request on your TS5.(Notification boards on the top left)<br>
 
 ## Konwn Bugs
-When you close the Settings Window,the layout widget will disapper.<br>
+1. When you close the Settings Window,the layout widget will disapper.<br>
 Solution:<br>
 Actually,you can just use the widget.<br>
 
-If you open the Settings Window first,you will not find the default IP and port.<br>
+2. If you open the Settings Window first,you will not find the default IP and port.<br>
 Solution:<br>
 Open widget first.
