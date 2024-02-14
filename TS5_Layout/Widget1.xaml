@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="WidgetSampleCS.Widget1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignHeight="100" d:DesignWidth="100">
+
+    <Grid Width="100"             
+          HorizontalAlignment="Center" 
+          Height="100" 
+          VerticalAlignment="Bottom">
+        <StackPanel
+            x:Name="avatar"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Orientation="Vertical">
+            <Canvas UseLayoutRounding="False">
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform CenterX="0" CenterY="0" Angle="180"></RotateTransform>
+                        <ScaleTransform ScaleX="0.004" ScaleY="0.0035"></ScaleTransform>
+                        <TranslateTransform X="-24" Y="-5"></TranslateTransform>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+                <Path Fill="Green"
+                      Data="M 3080 12714 c -443 -55 -837 -253 -1146 -577 c -302 -316 -494 -735 -544 -1182 c -8 -71 -10 -875 -8 -2805 l 3 -2705 l 22 -110 c 120 -597 439 -1072 918 -1365 c 711 -437 1643 -325 2243 269 c 300 296 481 640 575 1096 c 21 100 21 111 24 2825 c 3 2433 2 2737 -12 2840 c -118 859 -727 1528 -1540 1690 c -86 18 -153 23 -305 25 c -107 2 -211 1 -230 -1 z" 
+                      Stretch="None">
+                </Path>
+                <Path Fill="Green"
+                      Data="M 112 6962 c -29 -19 -32 -90 -32 -712 c 0 -860 13 -1067 84 -1377 c 216 -936 872 -1729 1765 -2133 c 235 -106 564 -207 789 -242 l 82 -12 l 0 -518 l 0 -518 l -790 0 l -790 0 l 0 -690 l 0 -690 l 2055 0 l 2055 0 l 0 690 l 0 690 l -790 0 l -790 0 l 0 518 l 0 518 l 83 12 c 45 7 146 28 223 47 c 1162 284 2067 1188 2330 2328 c 71 310 84 517 84 1377 c 0 622 -3 693 -32 712 c -7 4 -223 8 -480 8 l -468 0 l -14 -22 c -13 -20 -15 -140 -19 -808 c -4 -849 -4 -851 -62 -1081 c -183 -720 -756 -1302 -1490 -1512 c -468 -134 -991 -113 -1435 58 c -659 254 -1148 795 -1315 1454 c -58 230 -58 232 -62 1081 c -4 668 -6 788 -19 808 l -14 22 l -468 0 c -257 0 -473 -4 -480 -8 z" 
+                      Stretch="None">
+                </Path>
+            </Canvas>
+            
+        </StackPanel>
+        <TextBlock
+            x:Name="disconnected"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            IsColorFontEnabled="True"
+            Foreground="Red"
+            >
+            Disconnected
+        </TextBlock>
+    </Grid>
+
+</Page>
