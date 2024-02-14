@@ -4,7 +4,7 @@ Use [Xbox Game Bar Widgets](https://learn.microsoft.com/en-us/gaming/game-bar/) 
 
 ## Install
 
-You can download the latest release,or package the source by Visual Studio.
+You can download the latest release,or package the source using Visual Studio by yourself.
 
 Use 'Install.ps1' to install this UWP application.
 It may ask you to install my certificate,just install it.
