@@ -114,15 +114,29 @@ public class SocketClient
 
     public void ReadMessage(JObject message)
     {
-        if (message != null && message["type"].ToString() == "clientSelfPropertyUpdated" && message["payload"]["flag"].ToString() == "flagTalking")
+        if (message != null && message["type"].ToString() == "clientSelfPropertyUpdated")
         {
-            if (bool.Parse(message["payload"]["newValue"].ToString()) == true)
+            if (message["payload"]["flag"].ToString() == "flagTalking")
             {
-                Widget1.Instance.Saying();
+                if (bool.Parse(message["payload"]["newValue"].ToString()) == true)
+                {
+                    Widget1.Instance.Saying();
+                }
+                else
+                {
+                    Widget1.Instance.NoSaying();
+                }
             }
-            else
+            else if (message["payload"]["flag"].ToString() == "inputMuted")
             {
-                Widget1.Instance.Muting();
+                if (bool.Parse(message["payload"]["newValue"].ToString()) == true)
+                {
+                    Widget1.Instance.Muted();
+                }
+                else
+                {
+                    Widget1.Instance.NoMuted();
+                }
             }
         }
         // 解决内存越用越多的问题

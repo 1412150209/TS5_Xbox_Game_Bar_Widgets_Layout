@@ -50,11 +50,27 @@ namespace WidgetSampleCS
             });
         }
 
-        public void Muting()
+        public void NoSaying()
         {
             _ = avatar.Dispatcher.TryRunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
             {
                 avatar.Opacity = 0.2;
+            });
+        }
+
+        public void Muted()
+        {
+            _ = muted.Dispatcher.TryRunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
+            {
+                muted.Opacity = 1;
+            });
+        }
+
+        public void NoMuted()
+        {
+            _ = muted.Dispatcher.TryRunAsync(Windows.UI.Core.CoreDispatcherPriority.High, () =>
+            {
+                muted.Opacity = 0;
             });
         }
     }
