@@ -4,7 +4,7 @@ Use [Xbox Game Bar Widgets](https://learn.microsoft.com/en-us/gaming/game-bar/) 
 
 ## Install
 
-You can download the latest release,or package the source by Visual Studio.
+You can download the latest release,or package the source using Visual Studio by yourself.
 
 Use 'Install.ps1' to install this UWP application.
 It may ask you to install my certificate,just install it.
@@ -25,3 +25,11 @@ You can open it from the Xbox Game Bar Widgets.<br>
 It will notice you if it didn't connected to TS5.<br>
 You will find a request on your TS5.(Notification boards on the top left)<br>
 
+## Konwn Bugs
+1. When you close the Settings Window,the layout widget will disapper.<br>
+Solution:<br>
+Actually,you can just use the widget.<br>
+
+2. If you open the Settings Window first,you will not find the default IP and port.<br>
+Solution:<br>
+Open widget first.
